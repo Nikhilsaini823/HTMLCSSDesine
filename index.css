@@ -8,6 +8,20 @@
     width: 6.5rem;
 }
 
+.play-btn{
+    background-color: rgb(3, 194, 252);
+    height: 55px;
+    width: 55px;
+    margin: 0 0 0 27px;
+    border-radius: 32;
+    border-radius: 30px;
+    padding-top: 12px;
+    padding-left: 2px;
+}
+.play-btn svg{
+    color: white;
+}
+
 .icon{
     cursor:pointer;
     position:relative;
@@ -18,12 +32,12 @@
     padding-right: 0%;
 }
 .main {
-    margin-left: 104px;
+    padding-left: 100px;
     font-size: 20px;
-    padding: 0px 40px 0px 0px;
     background-color: rgb(1, 2, 64);
     color: white;
-    padding-top: 100px;
+    padding-top: 120px;
+    overflow: hidden;
   }
 /* Top Page */
 .first-page{
@@ -33,17 +47,39 @@
     margin-top: 150px;
 }
 .first-page-col-2{
-    width: inherit;
+    width: -webkit-fill-available;
+}
+
+.personal-social {
+    overflow: hidden;
+    text-align: right;
+    margin-top: -780px;
+}
+
+.personal-social ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.personal-social li {
+    margin: 40px 0;
+    font-size: 18px;
+}
+
+.personal-social a {
+   color: white;
 }
 
 /* my resume button */
-.resume-btn{
-    height: 60px;
-    width: 190px;
+
+.top-resume-btn{
+    height: 65px;
+    width: 250px;
     --bs-btn-font-size: 1.2rem;
     border-radius: 30px !important;
 }
-.resume-btn:hover{
+.top-resume-btn:hover{
     background-color: rgb(211 5 100)
 }
 
@@ -57,6 +93,17 @@
     text-transform: uppercase;
     color: rgb(211 5 100);
 }
+.heading-shape {
+    margin: -160px 0 0 -40px;
+    width: 50px;
+}
+.heading-shape img{
+    height: auto;
+    max-width: 100%;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
 .second-heading{
     text-align: center;
     font-weight: 800;
@@ -69,9 +116,7 @@
 
 .services{
     background-color: rgba(0, 0, 0, 0.2) !important;
-    padding: 120px 0px 90px 0px;
-    max-width: 1140px;
-    margin-right: 15px;
+    padding: 120px 0px 100px 0px;
 }
 
 .services-section{
@@ -96,7 +141,9 @@
     padding: 120px 0px 0px 35px;
     max-width: 1206px;
 }
-
+.portfolio-heading p{
+    color: deeppink;
+}
 .portfolio-project{
     padding-left: 3%;
 }
@@ -107,6 +154,7 @@
 .project-heading{
     padding-top: 50px
 }
+
 .vartical-line {
     border-left: 2px solid white;
     height: 80px;
@@ -128,44 +176,163 @@
     padding-top: 120px;
 }
 
+
 .about-image{
     margin-left: 25px;
 }
+
 .about-heading{
     margin-top: 80px;
+    color: deeppink;
 }
 
 .about-text{
     font-size: 16px;
 }
+
 .about-subheading{
     margin-left: -215px;
 }
+
 .about-bell{
-    position: absolute;
-    top: 0%;
-    right: 5%;
-    padding-top: 228%;
+   text-align: right;
 }
-.about-bell-img{
+
+.about-bell img{
     height: auto;
     max-width: 100%;
     border: none;
     border-radius: 0;
     box-shadow: none;
+    margin-right: 65px;
+    margin-bottom: 40px;
 }
 
 /* Resume css */
-.resume{
+
+.exprence-content-box{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 60px;
+    background-color: #0c1152;
+}
+div#resume {
+    padding-top: 50px;
+}
+.resume-tab-navs{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: none;
+    margin: -40;
+    margin-bottom: 50px;
+    padding: 10px;
+    border-radius: 50px;
+    grid-column-gap: 15px;
+    box-shadow: 0 0 1rem 0 rgba(56, 84, 177, 0.699);
+    position: relative;
+    z-index: 1;
+    background: #00436d;;
+}
+
+.resume-tab-navs .nav-link {
+    background: #e40328;
+    border: #c1bdbd;
+    border-radius: 50px;
+    color: aliceblue;
+    height: 60px;
+}
+
+.resume-tab-content{
+    position: relative;
+}
+
+.biography-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 70px;
+    overflow: hidden;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.biography-table li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    line-height: 30px;
+}
+
+.biography-table li h5 {
+    margin: 0;
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.biography-table li p {
+    margin: 0;
+    color: #c3c1be;
+    text-transform: none;
+    font-weight: 400;
+    font-family: var(--font-default);
+}
+
+.skill-table {
+    z-index: 1;
+    position: relative;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.skill-table li{
+    border: none;
+    padding-top: 0;
+    padding: 10px 0;
+    line-height: 32px;
+}
+.education-table {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 60px;
+    grid-row-gap: 40px;
+    list-style: none;
+    margin: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.education-table span {
+    display: inline-block;
+    background: #e40328;
+    color: white;
+    font-weight: 800;
+    padding: 0 10px;
+    margin-bottom: 15px;
+}
+.education-table h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.education-table p {
+    color: #928a8e;
+    margin: 0 0 15px;
+    text-transform: none;
+    font-weight: 500;
+    font-family: var(--font-default);
+}
+
+/* .resume{
     position: absolute;
     margin-top: -50px;
     padding: 0px 71px 0px 66px;
-}
+} */
 
-.exprence-box{
+/* .exprence-box{
     padding-top: 150px;
-}
-.resume-tab-navs{
+} */
+/* .resume-tab-navs{
     background: #012b45;
     border: 1px solid rgba(255, 255, 255, 0.2);
     display: grid;
@@ -186,7 +353,20 @@
     width: 310px;
     background: hsla(332, 98%, 45%, 0.945) !important;
     color: white;
+    border-radius: 30px;
 }
+button#nav-home-tab {
+    border-radius: 30px;
+}
+
+button#nav-profile-tab {
+    border-radius: 30px;
+}
+
+button#nav-contact-tab {
+    border-radius: 30px;
+}
+
 .resume-content{
     background: rgba(0, 0, 0, 0.1) !important;
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -230,7 +410,7 @@
 }
 .education-span{
     background-color: hsla(332, 98%, 45%, 0.945);
-}
+} */
 
 /* pricing area  */
 
@@ -250,6 +430,10 @@
 
 .left-info{
     box-sizing: border-box;
+}
+
+.left-info h5{
+    color: deeppink;
 }
 
 .save-amount{
@@ -347,16 +531,13 @@
 /* work available area */
 
 .work-available-area{
-    padding-top: 120px;
     padding-bottom: 120px;
     background: rgba(0, 0, 0, 0.2) !important;
 }
 
 .shape{
-    position: absolute;
-    top: 0%;
-    right: 2%;
-    padding-top: 405%;
+    text-align: right;
+    padding-top: 20px;
 }
 .shape img{
     height: auto;
@@ -364,6 +545,7 @@
     border: none;
     border-radius: 0;
     box-shadow: none;
+    margin: -60px -30px 0px 0px;
 }
 .shape-two{
     position: absolute;
@@ -428,25 +610,22 @@
     font-size: 15px;
 }
 
+
 /* contect form css */
 
 .contect-form{
     padding-top: 120px;
+    position: relative;
+}
+.contect-info a{
+    color: #c1bdbd;
+    text-decoration: none;
 }
 
 .contect {
     padding-bottom: 120px;
 }
 
-.text-content{
-    text-transform: uppercase;
-    font-size: 200px;
-    position: inherit;
-    left: 30%;
-    top: 150px;
-    opacity: 0.04;
-    z-index: -1;
-}
 .contect .form-box{
     background:  #012b45;
     padding: 60px;
@@ -521,6 +700,7 @@
     margin-top: 5px;
     border-radius: 5px;
 }
+
 .location-icon {
     background-color: rgb(255, 6, 193);
     width: 60px;
