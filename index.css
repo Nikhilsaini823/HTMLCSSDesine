@@ -190,8 +190,8 @@
     font-size: 16px;
 }
 
-.about-subheading{
-    margin-left: -215px;
+.about-subheading p {
+    color: #b7b1b1;
 }
 
 .about-bell{
@@ -290,6 +290,38 @@ div#resume {
     padding: 10px 0;
     line-height: 32px;
 }
+.skill-page2-oops{
+    background-color: #fb503b;
+    height: 70px;
+    width: 70px;
+    margin: 0 0 0 27px;
+    border-radius: 32;
+    border-radius: 35px;
+    padding-top: 21px;
+    padding-left: 22px;
+}
+.skill-page2-react{
+    background-color: #61DBFB;
+    height: 70px;
+    width: 70px;
+    margin: 0 0 0 27px;
+    border-radius: 32;
+    border-radius: 35px;
+    padding-top: 21px;
+    padding-left: 20px;
+}
+
+.skill-page2-html{
+    background-color: #e34c26;
+    height: 70px;
+    width: 70px;
+    margin: 0 0 0 27px;
+    border-radius: 32;
+    border-radius: 35px;
+    padding-top: 21px;
+    padding-left: 20px;
+}
+
 .education-table {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -471,9 +503,13 @@ button#nav-contact-tab {
 .order-btn{
     height: 40px;
     width: 150px;
-    background: hwb(214 1% 11% / 0.945) !important;
+    /* color: hwb(214 1% 11% / 0.945) !important; */
     color: white;
+    border: none;
     border-radius: 30px !important;
+}
+.order-btn:hover{
+    background-color: rgb(0, 102, 255)
 }
 .price{
     display: flex;
@@ -492,6 +528,16 @@ button#nav-contact-tab {
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     padding: 20px 15px 25px 30px;
+}
+.pricing-style-html{
+    background-color: #e34c26;
+    height: 70px;
+    width: 70px;
+    margin: 0 0 0 27px;
+    border-radius: 32;
+    border-radius: 35px;
+    padding-top: 10px;
+    text-align: center;
 }
 
 /* company logo  */
@@ -680,13 +726,15 @@ button#nav-contact-tab {
     overflow: hidden;
     position: relative;
     z-index: 1;
-    color: white;
-    background: hsla(332, 98%, 45%, 0.945);
     padding: 20px 50px;
     font-size: 16px;
     border-radius: 30px;
     margin-top: 20px;
     border: white;
+}
+.form-box button:hover{
+    /* color: white; */
+    background: hsla(332, 98%, 45%, 0.945);
 }
 
 .email-icon{
