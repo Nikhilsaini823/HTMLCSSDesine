@@ -572,6 +572,7 @@ button#nav-contact-tab {
 .provider span{
     font-size: 15px;
     color: hsla(332, 98%, 45%, 0.945);
+    font-weight: bold;
 }
 
 /* work available area */
@@ -639,6 +640,7 @@ button#nav-contact-tab {
     background: transparent;
     cursor: pointer;
 }
+
 .blog-style .thumb{
     overflow: hidden;
     border-radius: 8px;
