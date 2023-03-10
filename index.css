@@ -8,7 +8,33 @@
     width: 6.5rem;
 }
 
-.play-btn{
+* h1{
+    font-weight: 800;
+    font-size: 30px;
+}
+
+* h2{
+    margin-bottom: 40px;
+    line-height: 1.1;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+* h3{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+* h5{
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: deeppink;
+}
+
+.play-btn {
     background-color: rgb(3, 194, 252);
     height: 55px;
     width: 55px;
@@ -87,14 +113,8 @@
 /* second page */
 
 
-.first-heading{
-    text-align: center;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: rgb(211 5 100);
-}
 .heading-shape {
-    margin: -160px 0 0 -40px;
+    margin: -180px 0 0 -40px;
     width: 50px;
 }
 .heading-shape img{
@@ -138,7 +158,7 @@
 .shape-amination-right{
     position: relative;
     right: -77%;
-    top: -20px;
+    top: -80px;
 }
 
 /* Third page  */
@@ -186,10 +206,7 @@
     margin-left: 25px;
 }
 
-.about-heading{
-    margin-top: 80px;
-    color: deeppink;
-}
+
 
 .about-text{
     font-size: 16px;
@@ -268,12 +285,6 @@ div#resume {
     line-height: 30px;
 }
 
-.biography-table li h5 {
-    margin: 0;
-    font-weight: 800;
-    font-size: 18px;
-}
-
 .biography-table li p {
     margin: 0;
     color: #c3c1be;
@@ -346,11 +357,6 @@ div#resume {
     padding: 0 10px;
     margin-bottom: 15px;
 }
-.education-table h5 {
-    text-transform: uppercase;
-    font-size: 14px;
-    margin-bottom: 20px;
-}
 
 .education-table p {
     color: #928a8e;
@@ -359,95 +365,6 @@ div#resume {
     font-weight: 500;
     font-family: var(--font-default);
 }
-
-/* .resume{
-    position: absolute;
-    margin-top: -50px;
-    padding: 0px 71px 0px 66px;
-} */
-
-/* .exprence-box{
-    padding-top: 150px;
-} */
-/* .resume-tab-navs{
-    background: #012b45;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    border: none;
-    margin: 0;
-    margin-bottom: 50px;
-    padding: 10px;
-    border-radius: 50px;
-    grid-column-gap: 15px;
-    box-shadow: 0 0 1rem 0 rgb(0 0 0 / 10%);
-    position: relative;
-    z-index: 1;
-}
-.resume-btn{
-    background: var(--color-primary) !important;
-    height: 60px;
-    width: 310px;
-    background: hsla(332, 98%, 45%, 0.945) !important;
-    color: white;
-    border-radius: 30px;
-}
-button#nav-home-tab {
-    border-radius: 30px;
-}
-
-button#nav-profile-tab {
-    border-radius: 30px;
-}
-
-button#nav-contact-tab {
-    border-radius: 30px;
-}
-
-.resume-content{
-    background: rgba(0, 0, 0, 0.1) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-.bio-table{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 70px;
-    overflow: hidden;
-    padding: 60px 90px 0 90px;
-    margin-bottom: 60px;
-}
-.resume-detail{
-    margin-top: 0;
-    margin-bottom: 0.5rem;
-    font-size: 15px;
-}
-.info-table{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: relative;
-    padding: 8px 0;
-    z-index: 1;
-}
-.skill-table{
-    z-index: 1;
-    position: relative;
-    padding: 60px 0px 50px 90px;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.education-table{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 60px;
-    grid-row-gap: 40px;
-    list-style: none;
-    padding-top: 60px;
-}
-.education-span{
-    background-color: hsla(332, 98%, 45%, 0.945);
-} */
 
 /* pricing area  */
 
@@ -467,10 +384,6 @@ button#nav-contact-tab {
 
 .left-info{
     box-sizing: border-box;
-}
-
-.left-info h5{
-    color: deeppink;
 }
 
 .save-amount{
@@ -523,7 +436,7 @@ button#nav-contact-tab {
     justify-content: space-between;
     text-align: right;
 }
-.price h2{
+.price h6{
     margin: 0;
     font-weight: 800;
     font-size: 40px;
@@ -563,13 +476,7 @@ button#nav-contact-tab {
 .site-heading {
     margin-bottom: 60px;
 }
-.site-heading h2{
-    font-size: 36px;
-}
-.site-heading h3{
-    font-size: 20px;
-    color: hsla(332, 98%, 45%, 0.945);
-}
+
 
 .provider{
     margin-top: 30px;
@@ -585,6 +492,13 @@ button#nav-contact-tab {
 .work-available-area{
     padding-bottom: 120px;
     background: rgba(0, 0, 0, 0.2) !important;
+}
+.work-available-area h2 {
+    font-size: 60px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 .shape{
@@ -611,13 +525,7 @@ button#nav-contact-tab {
     border-radius: 0;
     box-shadow: none;
 }
-.work-available h2{
-    font-size: 60px;
-    text-transform: capitalize;
-    margin-bottom: 40px;
-    line-height: 1.1;
-    font-weight: 700;
-}
+
 .btn-work-avilable{
     background: #e3038df1;
     color: white;
@@ -634,9 +542,6 @@ button#nav-contact-tab {
 }
 .news-heading{
     margin-bottom: 60px;
-}
-.news-heading h4{
-    color: hsla(332, 98%, 45%, 0.945);
 }
 
 .blog-style .item{
@@ -682,10 +587,6 @@ button#nav-contact-tab {
 .contect .form-box{
     background:  #012b45;
     padding: 60px;
-}
-
-.form-box h2{
-    font-size: 40px;
 }
 
 .form-box p{
@@ -754,6 +655,13 @@ button#nav-contact-tab {
     display: inline-block;
     margin-top: 5px;
     border-radius: 5px;
+}
+.contect-info h5 a{
+    color: white;
+    margin: 0;
+    font-weight: 700;
+    line-height: 1.3;
+    font-size: 18px
 }
 
 .location-icon {
