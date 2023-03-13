@@ -104,9 +104,13 @@
     width: 250px;
     --bs-btn-font-size: 1.2rem;
     border-radius: 30px !important;
+    background: linear-gradient(to left, rgb(3, 3, 3) 50%, #e40328 50%) right;
+    background-size: 200%;
+    transition: .35s ease-out;
+    border: none;
 }
 .top-resume-btn:hover{
-    background-color: rgb(211 5 100)
+    background-position:left;
 }
 
 
@@ -337,6 +341,35 @@ div#resume {
     padding-top: 21px;
     padding-left: 20px;
 }
+.percentage h1{
+    float: left;
+    margin-right: 15px;
+    margin-top: -14px;
+    font-size: 30px;
+}
+.progress{
+    opacity: 1;
+    left: 0px;
+    height: 8px;
+    margin-top: 15px;
+    z-index: 1;
+}
+
+.progress-bar {
+    width:75%;
+    border-radius: 50px;
+    background: linear-gradient(to right ,  #ff014f 50%, transparent 0%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    animation: makeItfadeIn 3s 1s;
+    animation-fill-mode:forwards;
+}
+@keyframes makeItfadeIn {
+    100% {
+        background-position: left;
+      }
+    
+  }
 
 .education-table {
     display: grid;
@@ -418,17 +451,32 @@ div#resume {
     margin-top: 9px;
     font-weight: 500;
 }
-.order-btn{
-    height: 40px;
-    width: 150px;
-    /* color: hwb(214 1% 11% / 0.945) !important; */
-    color: white;
+
+.pricing-style a{
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: arial;
+    background-color: #e40328;
+    background-image: linear-gradient(#878080, #000000);
+    background-repeat: no-repeat;
+    transition: background-size .25s, color .3s;
     border: none;
-    border-radius: 30px !important;
 }
-.order-btn:hover{
-    background-color: rgb(0, 102, 255)
+.order-btn{
+    background-position: 50% 50%;
 }
+.order-btn{
+    background-size: 0% 0%;
+}
+.pricing-style a:hover {
+    background-size: 100% 100%;
+    color: #fff;
+}
+
 .price{
     display: flex;
     flex-direction: column;
@@ -488,6 +536,33 @@ div#resume {
 }
 
 /* work available area */
+
+.work-available-area a{
+    position: relative;
+    display: inline-block;
+    padding: 12px 45px;
+    text-decoration: none;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: arial;
+    background-color: #e40328;
+    background-image: linear-gradient(#6f6dd9, #1104db);
+    background-repeat: no-repeat;
+    transition: background-size .25s, color .3s;
+    border: none;
+}
+.work-avilable-btn{
+    background-position: 50% 50%;
+}
+.work-avilable-btn{
+    background-size: 0% 0%;
+}
+
+.work-available-area a:hover{
+    background-size: 100% 100%;
+    color: #fff;
+}
 
 .work-available-area{
     padding-bottom: 120px;
@@ -568,6 +643,16 @@ div#resume {
     font-size: 15px;
 }
 
+.info-blog h4:hover{
+    color: hsla(323, 90%, 62%, 0.945);
+    transition: 0.5s;
+}
+
+.meta-blog-li:hover{
+    color: hsla(327, 80%, 56%, 0.945);
+    transition: 0.5s;
+}
+
 
 /* contect form css */
 
@@ -627,23 +712,33 @@ div#resume {
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 .form-box button{
-    display: inline-block;
-    font-weight: 800;
-    text-transform: capitalize;
-    transition: all 0.35s ease-in-out;
-    overflow: hidden;
     position: relative;
-    z-index: 1;
-    padding: 20px 50px;
-    font-size: 16px;
+    display: inline-block;
+    padding: 15px 45px;
+    text-decoration: none;
     border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    font-family: arial;
+    background-color: #e40328;
+    background-image: linear-gradient(#958bca, #120edf);
+    background-repeat: no-repeat;
+    transition: background-size .25s, color .3s;
+    border: none;
     margin-top: 20px;
-    border: white;
 }
+.send-message-btn{
+    background-position: 50% 50%;
+}
+.send-message-btn{
+    background-size: 0% 0%;
+}
+
 .form-box button:hover{
-    /* color: white; */
-    background: hsla(332, 98%, 45%, 0.945);
+    background-size: 100% 100%;
+    color: #fff;
 }
+
 
 .email-icon{
     background-color: rgb(0, 149, 194);
