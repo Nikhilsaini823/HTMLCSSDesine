@@ -115,12 +115,16 @@
     background-position:left;
 }
 
-
+div#nav-tab {
+    grid-template-columns: auto;
+    margin: 0px;
+    margin-bottom: 20px;
+}
 /* second page */
 
 
 .heading-shape {
-    margin: -180px 0 0 -40px;
+    margin: -160px 0 0 -45px;
     width: 50px;
 }
 .heading-shape img{
@@ -1077,6 +1081,21 @@ div#resume {
         width: 390px;
         padding-bottom: 20px;
     }
+    .skill-page2-oops {
+        display: none;
+    }
+    .education-table {
+        grid-template-columns: auto;
+    }
+    .skill-page2-react {
+        display: none;
+    }
+    .skill-page2-html{
+        display: none;
+    }
+    .pricing {
+        padding-top: 30px;
+    }
     * h2{
         text-align: center;
         margin-top: 40px;
@@ -1104,6 +1123,17 @@ div#resume {
         justify-content: space-evenly;
         flex-wrap: wrap;
     }
+    .about-bell img{
+        margin-right: 0px;
+        height: 60px;
+        width: 60px;
+        margin-bottom: 0px;
+    }
+
+    ul.biography-table {
+        grid-template-columns: auto;
+    }
+
     .portfolio-rating{
         border-left: none;
     }
