@@ -17,7 +17,7 @@
 }
 
 * h2{
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     line-height: 1.2;
     font-weight: 700;
     font-size: 2rem;
@@ -1087,7 +1087,38 @@ div#resume {
     .about-text{
         text-align: center;
     }
+    .about-icon img{
+       margin-left: 155px;
+    }
+    .wphtml img{
+        margin-left: 360%;
+    }
 
+    .logo{
+        display: none;
+    }
+    .col-5.portfolio-heading {
+        width: auto;
+    } 
+    div#portfolio {
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .portfolio-rating{
+        border-left: none;
+    }
+    .portfolio-rating h2{
+        margin-bottom: 0px;
+    }
+    .portfolio-heading{
+        padding-right: .0rem!important;
+    }
+    .portfolio-heading h2{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+    }
+    
     .about-icon{
         text-align: center;
     }
@@ -1105,16 +1136,41 @@ div#resume {
         border-radius: 20px;
     }
 
+    .heading-left h2{
+        margin: 0;
+    }
+
     .shape-two{
-        padding-top: 500px;
+        padding-top: 175px;
     }
     .shape-two img{
         height: 100px;
         width: 100;
     }
 
+    .news-heading h2{
+        margin: 0%;
+    }
+    .news-heading {
+        margin-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .testimonial-area{
+        padding: 0;
+    }
+    .shape img{
+        height: 90px;
+        width: 90px;
+        padding: 10px 20px 15px 0px;
+    }
+
     .heading-shape{
         display: none;
+    }
+    .work-available-area h2{
+        font-size: 30px;
+        margin-top: 0; 
     }
 
     .contect {
@@ -1123,7 +1179,27 @@ div#resume {
     .footer {
         display: none;
     }
-  
+    .email h5{
+        text-align: left;
+    }
+    .address h5{
+        text-align: left;
+    }
+    .phone h5{
+        text-align: left;
+    }
+    .contect-form{
+        padding-top: 50px;
+    }
+    .contect .form-box{
+        padding: 20px;
+    }
+    .contect ul{
+        padding: 20px;
+    }
+    .news{
+        padding: 0;
+    }
    }
    
 
