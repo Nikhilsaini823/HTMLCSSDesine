@@ -5,5 +5,8 @@ $(document).ready(function(){
     $(".navbar-collapse button.navbar-toggle").click(function(){
         $(".navbar-collapse").removeClass('show');
     });
+    $(".navbar-collapse li a").click(function(){
+        $(".navbar-collapse").removeClass('show');
+    });
         
     });

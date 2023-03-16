@@ -115,11 +115,6 @@
     background-position:left;
 }
 
-div#nav-tab {
-    grid-template-columns: auto;
-    margin: 0px;
-    margin-bottom: 20px;
-}
 /* second page */
 
 
@@ -304,7 +299,8 @@ div#nav-tab {
     position: relative;
     z-index: 1;
     padding-bottom: 60px;
-    background-color: #0c1152;
+    background-color: #202674;
+    border-radius: 20px;
 }
 div#resume {
     padding-top: 50px;
@@ -1025,6 +1021,9 @@ div#resume {
     .main {
         padding-left: 0px;
     }
+    .navbar-collapse ul li a.show{
+        display: none;
+    }
     .personal-social ul {
         display: none;
     }
@@ -1129,9 +1128,20 @@ div#resume {
         width: 60px;
         margin-bottom: 0px;
     }
+    .exprence-content-box{
+        padding: 0 15px 30px 15px;
+        margin: 0 10px 0 10px;
+    }
 
     ul.biography-table {
         grid-template-columns: auto;
+    }
+
+    
+    div#nav-tab {
+        grid-template-columns: auto;
+        margin: 0px;
+        margin-bottom: 20px;
     }
 
     .portfolio-rating{
